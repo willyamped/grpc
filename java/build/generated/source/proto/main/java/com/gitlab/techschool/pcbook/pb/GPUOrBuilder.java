@@ -10,16 +10,16 @@ public interface GPUOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string brang = 1;</code>
-   * @return The brang.
+   * <code>string brand = 1;</code>
+   * @return The brand.
    */
-  java.lang.String getBrang();
+  java.lang.String getBrand();
   /**
-   * <code>string brang = 1;</code>
-   * @return The bytes for brang.
+   * <code>string brand = 1;</code>
+   * @return The bytes for brand.
    */
   com.google.protobuf.ByteString
-      getBrangBytes();
+      getBrandBytes();
 
   /**
    * <code>string name = 2;</code>

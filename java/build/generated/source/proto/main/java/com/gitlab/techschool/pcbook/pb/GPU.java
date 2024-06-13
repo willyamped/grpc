@@ -27,7 +27,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GPU() {
-    brang_ = "";
+    brand_ = "";
     name_ = "";
   }
 
@@ -45,39 +45,39 @@ private static final long serialVersionUID = 0L;
   }
 
   private int bitField0_;
-  public static final int BRANG_FIELD_NUMBER = 1;
+  public static final int BRAND_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private volatile java.lang.Object brang_ = "";
+  private volatile java.lang.Object brand_ = "";
   /**
-   * <code>string brang = 1;</code>
-   * @return The brang.
+   * <code>string brand = 1;</code>
+   * @return The brand.
    */
   @java.lang.Override
-  public java.lang.String getBrang() {
-    java.lang.Object ref = brang_;
+  public java.lang.String getBrand() {
+    java.lang.Object ref = brand_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      brang_ = s;
+      brand_ = s;
       return s;
     }
   }
   /**
-   * <code>string brang = 1;</code>
-   * @return The bytes for brang.
+   * <code>string brand = 1;</code>
+   * @return The bytes for brand.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getBrangBytes() {
-    java.lang.Object ref = brang_;
+      getBrandBytes() {
+    java.lang.Object ref = brand_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      brang_ = b;
+      brand_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -185,8 +185,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(brang_)) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 1, brang_);
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(brand_)) {
+      com.google.protobuf.GeneratedMessage.writeString(output, 1, brand_);
     }
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessage.writeString(output, 2, name_);
@@ -209,8 +209,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(brang_)) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, brang_);
+    if (!com.google.protobuf.GeneratedMessage.isStringEmpty(brand_)) {
+      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, brand_);
     }
     if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessage.computeStringSize(2, name_);
@@ -242,8 +242,8 @@ private static final long serialVersionUID = 0L;
     }
     com.gitlab.techschool.pcbook.pb.GPU other = (com.gitlab.techschool.pcbook.pb.GPU) obj;
 
-    if (!getBrang()
-        .equals(other.getBrang())) return false;
+    if (!getBrand()
+        .equals(other.getBrand())) return false;
     if (!getName()
         .equals(other.getName())) return false;
     if (java.lang.Double.doubleToLongBits(getMinGhz())
@@ -268,8 +268,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + BRANG_FIELD_NUMBER;
-    hash = (53 * hash) + getBrang().hashCode();
+    hash = (37 * hash) + BRAND_FIELD_NUMBER;
+    hash = (53 * hash) + getBrand().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + MIN_GHZ_FIELD_NUMBER;
@@ -419,7 +419,7 @@ private static final long serialVersionUID = 0L;
     public Builder clear() {
       super.clear();
       bitField0_ = 0;
-      brang_ = "";
+      brand_ = "";
       name_ = "";
       minGhz_ = 0D;
       maxGhz_ = 0D;
@@ -462,7 +462,7 @@ private static final long serialVersionUID = 0L;
     private void buildPartial0(com.gitlab.techschool.pcbook.pb.GPU result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
-        result.brang_ = brang_;
+        result.brand_ = brand_;
       }
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.name_ = name_;
@@ -495,8 +495,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.gitlab.techschool.pcbook.pb.GPU other) {
       if (other == com.gitlab.techschool.pcbook.pb.GPU.getDefaultInstance()) return this;
-      if (!other.getBrang().isEmpty()) {
-        brang_ = other.brang_;
+      if (!other.getBrand().isEmpty()) {
+        brand_ = other.brand_;
         bitField0_ |= 0x00000001;
         onChanged();
       }
@@ -541,7 +541,7 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              brang_ = input.readStringRequireUtf8();
+              brand_ = input.readStringRequireUtf8();
               bitField0_ |= 0x00000001;
               break;
             } // case 10
@@ -584,73 +584,73 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object brang_ = "";
+    private java.lang.Object brand_ = "";
     /**
-     * <code>string brang = 1;</code>
-     * @return The brang.
+     * <code>string brand = 1;</code>
+     * @return The brand.
      */
-    public java.lang.String getBrang() {
-      java.lang.Object ref = brang_;
+    public java.lang.String getBrand() {
+      java.lang.Object ref = brand_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        brang_ = s;
+        brand_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string brang = 1;</code>
-     * @return The bytes for brang.
+     * <code>string brand = 1;</code>
+     * @return The bytes for brand.
      */
     public com.google.protobuf.ByteString
-        getBrangBytes() {
-      java.lang.Object ref = brang_;
+        getBrandBytes() {
+      java.lang.Object ref = brand_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        brang_ = b;
+        brand_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string brang = 1;</code>
-     * @param value The brang to set.
+     * <code>string brand = 1;</code>
+     * @param value The brand to set.
      * @return This builder for chaining.
      */
-    public Builder setBrang(
+    public Builder setBrand(
         java.lang.String value) {
       if (value == null) { throw new NullPointerException(); }
-      brang_ = value;
+      brand_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
     /**
-     * <code>string brang = 1;</code>
+     * <code>string brand = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBrang() {
-      brang_ = getDefaultInstance().getBrang();
+    public Builder clearBrand() {
+      brand_ = getDefaultInstance().getBrand();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>string brang = 1;</code>
-     * @param value The bytes for brang to set.
+     * <code>string brand = 1;</code>
+     * @param value The bytes for brand to set.
      * @return This builder for chaining.
      */
-    public Builder setBrangBytes(
+    public Builder setBrandBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) { throw new NullPointerException(); }
       checkByteStringIsUtf8(value);
-      brang_ = value;
+      brand_ = value;
       bitField0_ |= 0x00000001;
       onChanged();
       return this;

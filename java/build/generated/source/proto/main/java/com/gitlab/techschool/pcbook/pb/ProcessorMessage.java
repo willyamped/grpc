@@ -48,7 +48,7 @@ public final class ProcessorMessage {
       "book\032\024memory_message.proto\"r\n\003CPU\022\r\n\005bra" +
       "nd\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\024\n\014number_cores\030\003" +
       " \001(\r\022\026\n\016number_threads\030\004 \001(\r\022\017\n\007min_ghz\030" +
-      "\005 \001(\001\022\017\n\007max_ghz\030\006 \001(\001\"o\n\003GPU\022\r\n\005brang\030\001" +
+      "\005 \001(\001\022\017\n\007max_ghz\030\006 \001(\001\"o\n\003GPU\022\r\n\005brand\030\001" +
       " \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007min_ghz\030\003 \001(\001\022\017\n\007m" +
       "ax_ghz\030\004 \001(\001\022)\n\006memory\030\005 \001(\0132\031.techschoo" +
       "l.pcbook.MemoryB*\n\037com.gitlab.techschool" +
@@ -70,7 +70,7 @@ public final class ProcessorMessage {
     internal_static_techschool_pcbook_GPU_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_techschool_pcbook_GPU_descriptor,
-        new java.lang.String[] { "Brang", "Name", "MinGhz", "MaxGhz", "Memory", });
+        new java.lang.String[] { "Brand", "Name", "MinGhz", "MaxGhz", "Memory", });
     descriptor.resolveAllFeaturesImmutable();
     com.gitlab.techschool.pcbook.pb.MemoryMessage.getDescriptor();
   }
