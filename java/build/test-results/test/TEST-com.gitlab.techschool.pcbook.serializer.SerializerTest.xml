@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gitlab.techschool.pcbook.serializer.SerializerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-13T12:28:09" hostname="Willys-MacBook-Air.local" time="0.115">
+  <properties/>
+  <testcase name="writeAndReadBinaryFile()" classname="com.gitlab.techschool.pcbook.serializer.SerializerTest" time="0.115"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,3 +1,5 @@
+com/gitlab/techschool/pcbook/pb/KeyboardOrBuilder.java
+ com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder
 com/gitlab/techschool/pcbook/pb/GPUOrBuilder.java
  com.gitlab.techschool.pcbook.pb.GPUOrBuilder
 com/gitlab/techschool/pcbook/pb/LaptopMessage.java
@@ -24,14 +26,18 @@ com/gitlab/techschool/pcbook/pb/Laptop.java
  com.gitlab.techschool.pcbook.pb.Laptop$WeightCase
 com/gitlab/techschool/pcbook/pb/KeyboardMessage.java
  com.gitlab.techschool.pcbook.pb.KeyboardMessage
-com/gitlab/techschool/pcbook/pb/ScreenMessage.java
- com.gitlab.techschool.pcbook.pb.ScreenMessage
 com/gitlab/techschool/pcbook/pb/Storage.java
  com.gitlab.techschool.pcbook.pb.Storage
  com.gitlab.techschool.pcbook.pb.Storage$1
  com.gitlab.techschool.pcbook.pb.Storage$Builder
  com.gitlab.techschool.pcbook.pb.Storage$Driver
  com.gitlab.techschool.pcbook.pb.Storage$Driver$1
+com/gitlab/techschool/pcbook/pb/ScreenMessage.java
+ com.gitlab.techschool.pcbook.pb.ScreenMessage
+com/gitlab/techschool/pcbook/pb/CPU.java
+ com.gitlab.techschool.pcbook.pb.CPU
+ com.gitlab.techschool.pcbook.pb.CPU$1
+ com.gitlab.techschool.pcbook.pb.CPU$Builder
 com/gitlab/techschool/pcbook/pb/Memory.java
  com.gitlab.techschool.pcbook.pb.Memory
  com.gitlab.techschool.pcbook.pb.Memory$1
@@ -40,10 +46,6 @@ com/gitlab/techschool/pcbook/pb/Memory.java
  com.gitlab.techschool.pcbook.pb.Memory$Unit$1
 com/gitlab/techschool/pcbook/pb/MemoryOrBuilder.java
  com.gitlab.techschool.pcbook.pb.MemoryOrBuilder
-com/gitlab/techschool/pcbook/pb/CPU.java
- com.gitlab.techschool.pcbook.pb.CPU
- com.gitlab.techschool.pcbook.pb.CPU$1
- com.gitlab.techschool.pcbook.pb.CPU$Builder
 com/gitlab/techschool/pcbook/pb/GPU.java
  com.gitlab.techschool.pcbook.pb.GPU
  com.gitlab.techschool.pcbook.pb.GPU$1
@@ -52,6 +54,8 @@ com/gitlab/techschool/pcbook/pb/ProcessorMessage.java
  com.gitlab.techschool.pcbook.pb.ProcessorMessage
 com/gitlab/techschool/pcbook/pb/StorageOrBuilder.java
  com.gitlab.techschool.pcbook.pb.StorageOrBuilder
+com/gitlab/techschool/pcbook/sample/Generator.java
+ com.gitlab.techschool.pcbook.sample.Generator
 com/gitlab/techschool/pcbook/pb/StorageMessage.java
  com.gitlab.techschool.pcbook.pb.StorageMessage
 com/gitlab/techschool/pcbook/pb/Screen.java
@@ -64,5 +68,5 @@ com/gitlab/techschool/pcbook/pb/Screen.java
  com.gitlab.techschool.pcbook.pb.Screen$Resolution$1
  com.gitlab.techschool.pcbook.pb.Screen$Resolution$Builder
  com.gitlab.techschool.pcbook.pb.Screen$ResolutionOrBuilder
-com/gitlab/techschool/pcbook/pb/KeyboardOrBuilder.java
- com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder
+com/gitlab/techschool/pcbook/serializer/Serializer.java
+ com.gitlab.techschool.pcbook.serializer.Serializer

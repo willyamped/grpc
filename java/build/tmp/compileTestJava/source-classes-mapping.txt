@@ -1,0 +1,2 @@
+com/gitlab/techschool/pcbook/serializer/SerializerTest.java
+ com.gitlab.techschool.pcbook.serializer.SerializerTest
