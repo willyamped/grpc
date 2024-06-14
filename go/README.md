@@ -1,7 +1,7 @@
 
-##Steps
+##How to perform code generation
 ```
-make run
+make gen
 ```
 
 Add these lines in settings.json
