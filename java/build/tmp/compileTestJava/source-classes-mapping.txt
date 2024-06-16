@@ -1,2 +1,4 @@
 com/gitlab/techschool/pcbook/serializer/SerializerTest.java
  com.gitlab.techschool.pcbook.serializer.SerializerTest
+com/gitlab/techschool/pcbook/service/LaptopServerTest.java
+ com.gitlab.techschool.pcbook.service.LaptopServerTest

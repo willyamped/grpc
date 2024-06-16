@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gitlab.techschool.pcbook.service.LaptopServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-16T14:13:17" hostname="Willys-MacBook-Air.local" time="0.848">
+  <properties/>
+  <testcase name="createLaptopWithAnExistingID()" classname="com.gitlab.techschool.pcbook.service.LaptopServerTest" time="0.848"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 16, 2024 9:13:17 PM com.gitlab.techschool.pcbook.service.LaptopServer start
+INFO: server started on port 0
+Jun 16, 2024 9:13:18 PM com.gitlab.techschool.pcbook.service.LaptopService createLaptop
+INFO: got a create laptop request with ID: c26254f6-79f0-4bf5-a519-14cfe63d4367
+]]></system-err>
+</testsuite>
