@@ -30,6 +30,7 @@ class LaptopServerTest {
 
     @BeforeEach
     void setUp() throws IOException {
+        // uses in process server vs server builder in LaptopServer.java
         String serverName = InProcessServerBuilder.generateName();
         InProcessServerBuilder serverBuilder = InProcessServerBuilder.forName(serverName).directExecutor();
 
