@@ -2,8 +2,12 @@ package com.gitlab.techschool.pcbook.service;
 
 import com.gitlab.techschool.pcbook.pb.CreateLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.CreateLaptopResponse;
+import com.gitlab.techschool.pcbook.pb.Filter;
 import com.gitlab.techschool.pcbook.pb.Laptop;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc;
+import com.gitlab.techschool.pcbook.pb.Memory;
+import com.gitlab.techschool.pcbook.pb.SearchLaptopRequest;
+import com.gitlab.techschool.pcbook.pb.SearchLaptopResponse;
 import com.gitlab.techschool.pcbook.sample.Generator;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -11,6 +15,7 @@ import io.grpc.Status;
 import io.grpc.StatusException;
 import io.grpc.StatusRuntimeException;
 
+import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -53,13 +58,48 @@ public class LaptopClient {
         logger.info("Laptop created with ID: " + response.getId());
     }
 
+    private void SearchLaptop(Filter filter) {
+        logger.info("Search started");
+
+        SearchLaptopRequest request = SearchLaptopRequest.newBuilder().setFilter(filter).build();
+        try {
+            Iterator<SearchLaptopResponse> responseIterator = blockingStub.withDeadlineAfter(5, TimeUnit.SECONDS).searchLaptop(request);
+
+            while (responseIterator.hasNext()) {
+                SearchLaptopResponse response = responseIterator.next();
+                Laptop laptop = response.getLaptop();
+                logger.info("- found: " + laptop.getId());
+            }
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "request failed: " + e.getMessage());
+            return;
+        }
+
+        logger.info("search completed");
+
+    }
+
     public static void main(String[] args) throws InterruptedException {
         LaptopClient client = new LaptopClient("0.0.0.0", 8080);
 
         Generator generator = new Generator();
-        Laptop laptop = generator.NewLaptop().toBuilder().setId("").build();
         try {
-            client.createLaptop(laptop);
+            for (int i = 0; i < 10; i++) {
+                Laptop laptop = generator.NewLaptop();
+                client.createLaptop(laptop);
+            }
+            Memory minRam = Memory.newBuilder()
+                    .setValue(8)
+                    .setUnit(Memory.Unit.GIGABYTE)
+                    .build();
+            Filter filter = Filter.newBuilder()
+                    .setMaxPriceUsed(3000)
+                    .setMinCpuCores(4)
+                    .setMinCpuGhz(2.5)
+                    .setMinRam(minRam)
+                    .build();
+
+            client.SearchLaptop(filter);
         } finally {
             client.shutdown();
         }
