@@ -27,6 +27,7 @@ func NewLaptopServer(laptopStore LaptopStore, imageStore ImageStore, ratingStore
 		UnimplementedLaptopServiceServer: pb.UnimplementedLaptopServiceServer{},
 		laptopStore:                      laptopStore,
 		imageStore:                       imageStore,
+		ratingStore:                      ratingStore,
 	}
 }
 
