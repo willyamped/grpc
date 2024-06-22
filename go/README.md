@@ -1,5 +1,5 @@
 
-##How to perform code generation
+## How to perform code generation
 ```
 make gen
 ```
@@ -18,3 +18,6 @@ Add these lines in settings.json
         ]
     }
 ```
+
+## Miscellaneous
+nginx config file is at `opt/homebrew/etc/nginx/nginx.conf`
